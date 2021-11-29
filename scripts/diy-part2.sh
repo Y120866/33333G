@@ -29,6 +29,9 @@ pushd package/community
 # Add Lienol's Packages
 git clone --depth=1 https://github.com/Lienol/openwrt-package
 rm -rf ../lean/luci-app-kodexplorer
+rm -rf ../lean/luci-app-unblockmusic
+
+
 
 # Add immortalwrt's Packages
 git clone --depth=1 -b openwrt-18.06 https://github.com/immortalwrt/packages
