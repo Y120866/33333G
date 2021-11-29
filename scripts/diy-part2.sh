@@ -135,3 +135,4 @@ git clone https://github.com/zzsj0928/luci-app-pushbot.git package/luci-app-push
 #git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+git clone -b luci2 https://github.com/kuoruan/luci-app-v2ray.git luci-app-v2ray
