@@ -24,13 +24,19 @@ Login to the router using SSH with root as username and the root password that i
 Actual installation via SSH:
 
 Copy ???????-kernel1.bin and ???????-rootfs0.bin optained from the release to a USB drive   on the router
+    
 Switch to /extdisks/sda1/  
+    
 Run:
     
 mtd write ???????-kernel1.bin kernel1
+    
 mtd write ???????-rootfs0.bin rootfs0
+    
 nvram set flag_try_sys1_failed=1
+    
 nvram commit
+    
 reboot
 
 
