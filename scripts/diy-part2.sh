@@ -125,6 +125,7 @@ popd
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 #添加额外非必须软件包
+rm -rf package/luci-app-adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
 #git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 #git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
