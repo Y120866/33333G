@@ -23,7 +23,7 @@ Login to the router using SSH with root as username and the root password that i
     
 Actual installation via SSH:
 
-Copy ???????-kernel1.bin and ???????-rootfs0.bin optained from the release to a USB drive   on the router
+Copy ???????-kernel1.bin and ???????-rootfs0.bin ( optained from the releases ) to a USB drive   on the router
     
 Switch to /extdisks/sda1/  
     
