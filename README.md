@@ -5,7 +5,7 @@ Installation via SSH for R3G v1
 
 For installation via ssh, it needs to be enabled first. The following steps are based on this forum post and this post from Reddit.
 
-Setup the router and install a [dev firmware], for example cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_12f97_2.25.124.bin
+Setup the router and install a [dev firmware], for example https:// cdn.cnbj1.fds.api.mi-img.com/xiaoqiang/rom/r3g/miwifi_r3g_firmware_12f97_2.25.124.bin
 
 Install the Mi Wi-Fi app on a phone or tablet. (Android | there is also an iOS app)
 
