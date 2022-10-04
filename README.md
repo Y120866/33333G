@@ -1,3 +1,19 @@
+## 写在前面
+
+小米R3G 路由器v1版 算是一个不错的路由器。 （不是v2版） 
+CPU是MT7621 相当于两个MT7620 ， rom是128MB  ram是256MB， 足够安装一堆插件， 包括transmission下载  广告屏蔽 ， zerotier 等等插件都有。 
+支持usb的优盘用transmission下载。 
+5G信号是单频 但也够用， 使用802.11s和802.11kvr可以组mesh。  
+支持ipv6-PD下发ipv6，所以没必要改光猫的拨号， 直接用光猫拨号就可以，把r3g的wan口接dhcp就行，r3g的lan设备都可以得到ipv6地址。  
+性能方面，用5G测速到500Mbps没问题。 如果是fast.com 那么使用vless协议可以达到40Mbps 也足够应付16Mbps的4K视频。  MT7621的性能限制，不支持硬解码AES，所以这块比较吃亏。 zerotier因为只有单线程使用cpu，所以速度只能达到10Mbps。但是总体来说可以满足日常所需。 
+
+路由器除了性能，最主要就是要求稳定。 所以本仓库提供稳定版在release 2022.02.16-1839， 通过breed或者openwrt升级刷入openwrt-ramips-mt7621-xiaomi_mi-router-3g-squashfs-sysupgrade.bin 就可以了。 如果是初次刷入，可以按照以下说明 刷入 openwrt-ramips-mt7621-xiaomi_mi-router-3g-squashfs-kernel1.bin 和 openwrt-ramips-mt7621-xiaomi_mi-router-3g-squashfs-rootfs0.bin。  
+
+因为lede的openwrt每天都在更新，但是对于r3g这种老设备来说意义不大，硬件驱动如果能稳定工作其实就没必要修改，我试着更新编译新版的lede，但是经常编译失败，或者编译成功的也各种毛病。 所以就不再编译了，用2月16日的版本就挺好，该有的功能都有了，开机一个月都不会死机。 就算更新，也只更新插件的ipk就行了。 插件只能更新xray和zerotier这种插件的ipk，其他的内核级包括firewall iptables这种插件万万不能更新，一更新就死。
+
+记住只要程序能跑，就不要更新。
+
+
 ## openwrt for xiaomi Router 3G R3G v1  rom 128MB  ram 256MB
 
 Installation via SSH for R3G v1
